@@ -1,0 +1,94 @@
+/* ---------- Desktop ---------- */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #0C0C0C;
+  z-index: 100;
+  padding: 1rem 0;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo img {
+  height: 50px;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.navbar-links li a {
+  color: var(--white);
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-links li a:hover {
+  color: #DB519F;
+}
+
+.navbar-cta {
+  display: flex;
+  align-items: center;
+}
+
+/* ---------- Mobile ---------- */
+.navbar-hamburger {
+  display: none;
+  cursor: pointer;
+  color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+  /* Mostrar el icono hamburger */
+  .navbar-hamburger {
+    display: block;
+  }
+
+  /* Menú mobile */
+  .navbar-links {
+    position: fixed;
+    top: 70px; /* debajo del navbar */
+    right: -100%; /* fuera de pantalla por defecto */
+    flex-direction: column;
+    background-color: #0C0C0C;
+    width: 220px;
+    height: calc(100vh - 70px);
+    padding: 2rem;
+    gap: 1.5rem;
+    transition: right 0.3s ease;
+    z-index: 99;
+  }
+
+  /* Mostrar menú cuando está activo */
+  .navbar-links.active {
+    right: 0;
+  }
+
+  /* Ocultar botón desktop */
+  .navbar-cta {
+    display: none;
+  }
+
+  /* Botón WhatsApp dentro del menú mobile */
+  .mobile-cta {
+    margin-top: 2rem;
+    display: block;
+  }
+
+  .navbar-links li {
+    margin: 0; /* quitar márgenes extra si los hubiera */
+  }
+
+  .navbar-links li a {
+    font-size: 1.1rem;
+  }
+}

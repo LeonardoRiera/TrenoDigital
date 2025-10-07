@@ -1,0 +1,174 @@
+/* ================================
+   RESET GENERAL
+=================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* ================================
+   VARIABLES DE COLOR Y TIPO
+=================================== */
+
+:root {
+  /* Tipografías base */
+  --font-title: 'Clash Grotesk', sans-serif;
+  --font-body: 'Satoshi', sans-serif;
+
+  /* Colores principales */
+  --black-bg: #000001;
+  --black-card: #0C0C0C;
+  --white: #e8e8e8;
+
+  /* Paleta de acentos */
+  --pink: #DB519F;
+  --violet: #9A3EAA;
+  --turquoise: #08E79D;
+  --blue: #316ECE;
+
+  /* Tonos neutros */
+  --gray-light: #CFCFCF;
+  --charcoal: #2A2A2A;
+}
+
+/* ================================
+   ESTILOS BASE
+=================================== */
+
+body {
+  background-color: var(--black-bg);
+  color: var(--white);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* ================================
+   TIPOGRAFÍA GLOBAL
+=================================== */
+
+h1 {
+  font-family: var(--font-title);
+  font-weight: 600;
+  color: var(--white);
+}
+
+h2 {
+  font-family: var(--font-title);
+  font-weight: 400;
+  color: var(--white);
+}
+
+h3, h4 {
+  font-family: var(--font-title);
+  font-weight: 300;
+  color: var(--white);
+}
+
+p {
+  font-family: var(--font-body);
+  font-weight: 400;
+  color: var(--gray-light);
+}
+
+/* ================================
+   LINKS Y BOTONES
+=================================== */
+
+a {
+  text-decoration: none;
+  color: var(--white);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--pink);
+}
+
+/* ================================
+   CONTENEDOR GLOBAL
+=================================== */
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ================================
+   SECCIONES BASE
+=================================== */
+
+section {
+  padding: 100px 0;
+}
+
+/* ================================
+   UTILIDADES
+=================================== */
+
+.text-center {
+  text-align: center;
+}
+
+.bg-card {
+  background-color: var(--black-card);
+}
+
+.text-accent {
+  color: var(--violet);
+}
+
+.text-pink {
+  color: var(--pink);
+}
+
+.text-turquoise {
+  color: var(--turquoise);
+}
+
+.text-blue {
+  color: var(--blue);
+}
+
+
+/* ================================
+   BOTONES GLOBALES
+=================================== */
+
+.btn {
+  font-family: var(--font-title);
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.9em 1.8em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Botón principal (por ejemplo, WhatsApp o CTA destacado) */
+.btn.primary {
+  background: var(--pink);
+  color: var(--white);
+}
+
+.btn.primary:hover {
+  background: var(--violet);
+  transform: scale(1.04);
+}
+
+/* Botón secundario (opcional, para estilos más neutros) */
+.btn.secondary {
+  background: transparent;
+  border: 2px solid var(--pink);
+  color: var(--pink);
+}
+
+.btn.secondary:hover {
+  background: var(--pink);
+  color: var(--white);
+}

@@ -1,0 +1,102 @@
+.header {
+  /* padding: 4rem 0; */
+  /* color: #FFFFFF; */
+  /* font-family: 'Clash Grotesk', sans-serif; */
+  /* border: solid 2px yellow; */
+  margin-top: 12vmax;
+}
+
+.header-top {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+   /* border: solid 2px rgb(0, 255, 26); */
+}
+
+.header-logo {
+    /* border: solid 2px rgb(12, 87, 104); */
+    flex: 1;         /* ocupa 1 parte */
+  margin-left: auto; /* empuja el contenido a la derecha */
+  display: flex;    /* necesario para que margin funcione correctamente en flex items */
+  justify-content: flex-end; /* asegura que el logo se alinee al final */
+}
+
+.header-logo img {
+    width: 80%;
+  display: flex;
+  align-items: center;
+  
+}
+
+.header-title {
+    /* border: solid 2px rgb(12, 87, 104); */
+    flex: 2; /* ocupa 2 partes */
+}
+
+.header-title h1 {
+  font-size:4vmax;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.header-subtitles {
+  margin-top: 3vmax;
+  display: flex;
+  flex-direction: column;
+  /* gap: 0.8rem; */
+}
+
+.header-subtitles h2 {
+  font-size: 2vmax;
+  font-weight: 400;
+  color: var(--white);
+  text-align: center;
+ 
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .header {
+        margin-top: 18vmax;
+    }
+
+   .header-top {
+    flex-direction: column; /* apilar logo y título */
+    align-items: center;    /* centrar horizontalmente */
+    justify-content: center;
+    gap: 6vmax;
+    border: none; /* opcional, quitar borders de debug */
+  }
+
+  .header-logo {
+    justify-content: center; /* logo centrado en mobile */
+    border: none; /* quitar border debug */
+  }
+
+  .header-logo img {
+    width: 50%; /* más pequeño en mobile */
+  }
+
+  .header-title {
+    flex: unset; /* quitar proporciones flex */
+    border: none;
+    text-align: center; /* título centrado */
+  }
+
+  .header-title h1 {
+    font-size: 6vw; /* ajustar tamaño responsive */
+  }
+
+  .header-subtitles {
+    margin-top: 2rem;
+    gap: 0.5rem;
+  }
+
+  .header-subtitles h2 {
+    font-size: 4vw; /* más pequeño en mobile */
+  }
+}
