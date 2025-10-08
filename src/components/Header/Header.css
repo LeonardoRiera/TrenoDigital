@@ -4,6 +4,7 @@
   /* font-family: 'Clash Grotesk', sans-serif; */
   /* border: solid 2px yellow; */
   margin-top: 12vmax;
+  /* border: solid 2px rgb(0, 255, 26); */
 }
 
 .header-top {
@@ -13,7 +14,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 2rem;
-   /* border: solid 2px rgb(0, 255, 26); */
+   
 }
 
 .header-logo {

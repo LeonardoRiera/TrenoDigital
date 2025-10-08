@@ -1,0 +1,234 @@
+.servicios {
+  width: 100%;
+  padding: 6vmax 0;
+  background-color: #000001;
+  color: var(--white);
+  text-align: center;
+  /* border: solid 3px yellow; */
+  padding-top: 1vmax;
+}
+
+.servicios-title {
+  font-size: 2.5vmax;
+  font-weight: 600;
+  margin-bottom: 4vmax;
+  font-family: 'Clash Grotesk', sans-serif;
+  letter-spacing: 0.05em;
+}
+
+.servicios-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.servicio-card {
+  flex: 1;
+  padding: 2rem;
+  min-width: 250px;
+  max-width: 400px;
+}
+
+.servicio-card.bordered {
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.servicio-card h3 {
+  font-size: 1.6vmax;
+  font-weight: 600;
+  font-family: 'Clash Grotesk', sans-serif;
+  color: var(--white);
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+
+}
+
+.servicio-card p {
+  font-size: 1.1rem;
+  font-family: 'Satoshi', sans-serif;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+
+.nosotros-mensaje {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  position: relative;
+  width: 80%;
+  margin: 5rem auto;
+  gap: 3rem;
+}
+
+.columna-imagen {
+  width: 60%;
+  position: relative;
+}
+
+.columna-imagen img {
+  width: 90%;
+  border-radius: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* La columna de texto se superpone ligeramente */
+.columna-texto {
+  width: 45%;
+  background: linear-gradient(135deg, #1b1b1bf2, #2a2a2a);
+  color: white;
+  padding: 6vmax 4vmax;
+  border-radius: 1.5rem;
+  position: absolute;
+  right: 5%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.505);
+}
+
+.mensaje-texto {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.mensaje-firma {
+  margin-top: 2rem;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+
+/* Contenedor de los planes */
+.planes-container {
+  display: flex;
+  justify-content: center;
+  gap: 4vmax;
+  width: 80%;
+  margin: 1vmax auto 0 auto;
+  flex-wrap: wrap;
+  /* border: solid 3px red; */
+}
+
+/* Cada card individual */
+.plan-card {
+  background-color: #1b1b1b; /* oscuro pero distinto al fondo */
+  color: white;
+  padding: 3rem 2rem;
+  border-radius: 1.5rem;
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+  
+}
+
+/* Efecto hover */
+.plan-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Título de la card */
+.plan-card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  font-family: 'Clash Grotesk', sans-serif;
+}
+
+/* Texto descriptivo */
+.plan-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* Precio destacado */
+.plan-card .precio {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #ea39ac; /* dorado o amarillo para resaltar */
+}
+
+
+/* Icono en la card */
+.plan-card .plan-icon {
+  width: 60px;          /* tamaño del icono */
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+/* Separador debajo del texto */
+.plan-card hr {
+  width: 60%;           /* solo el 60% de la card */
+  margin: 1.5rem auto;  /* centrado horizontal y espacio vertical */
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.cta-servicios {
+    text-align: center;
+    margin: 4vmax auto 1vmax auto;
+    width: 40%;
+}
+
+.cta-servicios h3 {
+    font-size: 2vmax;
+    margin-top: 2vmax;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .servicios-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .servicio-card.bordered {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .servicio-card {
+    padding: 2rem 1rem;
+    max-width: 90%;
+  }
+
+   .nosotros-mensaje {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 3rem auto;
+    gap: 2rem;
+    position: relative;
+  }
+
+  .columna-imagen {
+    width: 100%;
+  }
+
+  .columna-imagen img {
+    width: 100%;
+    border-radius: 2rem;
+  }
+
+  .columna-texto {
+    width: 90%;
+    position: relative;
+    margin: -4rem auto 0 auto; /* centrado horizontal con auto, y pisa la imagen */
+    padding: 4vmax 3vmax;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    border: solid 2px white;
+    justify-content: center;
+  }
+
+  .mensaje-texto {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}

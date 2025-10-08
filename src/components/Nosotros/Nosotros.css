@@ -1,0 +1,113 @@
+/* ---------- Sección Nosotros ---------- */
+.nosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: flex-start;
+  margin-top: 4vmax;
+  /* border: solid 2px rgb(21, 255, 0); */
+  gap: 6vmax;
+}
+
+.nosotros-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vmax;
+  flex-wrap: nowrap; 
+  margin-top: 0;
+  padding: 1.5rem 0;
+  /* border: solid 2px yellow; */
+}
+
+.nosotros-logos img {
+  height: auto;
+  width: 8vmax;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.nosotros-logos img:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.nosotros-hero {
+  width: 80%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items:start;        /* centra verticalmente el texto */
+  justify-content: center; /* lo alinea a la izquierda */
+  gap: 2vmax;
+  border-radius: 4vmax;
+  padding: 3rem;
+  position: relative;
+  overflow: hidden;
+  /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25); */
+  /* border: solid 3px yellow; */
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.64);
+  margin-top: 3vmax;
+}
+
+/* capa semitransparente para mejorar contraste del texto */
+/* .nosotros-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 0;
+} */
+
+.nosotros-hero h2 {
+  position: relative;
+  z-index: 1; /* asegura que el texto quede arriba del overlay */
+  color: var(--white);
+  font-size: 3vmax;
+  font-weight: 600;
+  max-width: 60%;
+  line-height: 1.2;
+}
+
+
+.nosotros-hero h3 {
+  position: relative;
+  z-index: 1; /* asegura que el texto quede arriba del overlay */
+    color: var(--white);
+  font-size: 1.5vmax;
+  font-weight: 400;
+  max-width: 40%;
+  line-height: 1.2;
+}
+
+.nosotros-texto-extra p {
+     color: var(--white);
+     text-align: center;
+  font-size: 1.5vmax;
+  font-weight: 400;
+ width: 60%;
+  line-height: 1.2;
+  margin: 0 auto;
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 768px) {
+  .nosotros-hero {
+    width: 90%;
+    height: 50vh;
+    padding: 2rem;
+  }
+
+  .nosotros-hero h2 {
+    font-size: 5vw;
+    max-width: 100%;
+  }
+
+  .nosotros-texto-extra {
+    width: 90%;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
