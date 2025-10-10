@@ -14,8 +14,14 @@
   align-items: center;
 }
 
+
+.navbar-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .navbar-logo img {
-  height: 50px;
+  height: 35px;
 }
 
 .navbar-links {

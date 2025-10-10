@@ -7,7 +7,7 @@ import Header from './components/Header/Header'
 import Nosotros from './components/Nosotros/Nosotros'
 import Servicios from './components/Servicios/Servicios'
 // import Portfolio from './components/Portfolio'
-// import Footer from './components/Footer'
+import Footer from './components/Footer/Footer'
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
       <Nosotros />
       <Servicios />
       {/* <Portfolio /> */}
-      {/* <Footer /> */}
+      <Footer />
     </>
   )
 }

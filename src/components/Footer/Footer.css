@@ -1,0 +1,124 @@
+.footer {
+  /* background: linear-gradient(270deg, #0a0a0a, #1c1c1c, #0a0a0a);
+  background-size: 400% 400%;
+  animation: gradientShift 12s ease infinite; */
+
+  background: linear-gradient(270deg, #050505, #1b1b1b, #050505);
+  background-size: 400% 400%;
+  animation: gradientShift 10s ease infinite;
+
+
+
+  color: var(--white);
+  padding: 6vmax 0 2vmax 0;
+  font-family: 'Clash Grotesk', sans-serif;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 4vmax;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 250px;
+  /* border: solid 2px white; */
+}
+
+.footer-logo {
+  width: 5.5vmax;
+  margin-bottom: 1rem;
+  opacity: 0.9;
+}
+
+.footer-description {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #bbb;
+}
+
+.footer-col h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--white);
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #bbb;
+  transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: var(--white);
+}
+
+.footer-socials {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-socials a:hover {
+  color: #00ffcc;
+  text-shadow: 0 0 10px #00ffcc;
+  transform: scale(1.2);
+}
+
+.footer-socials a {
+  color: #bbb;
+  font-size: 1.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-socials a:hover {
+  color: var(--white);
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 3vmax;
+  padding-top: 1.5vmax;
+  text-align: center;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+
+  .footer-logo {
+    margin: 0 auto 1rem auto;
+  }
+}

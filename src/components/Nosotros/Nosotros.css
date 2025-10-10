@@ -13,18 +13,32 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2vmax;
+  gap: 5vmax;
   flex-wrap: nowrap; 
   margin-top: 0;
-  padding: 1.5rem 0;
+  padding: 1rem 0;
   /* border: solid 2px yellow; */
 }
+
+
 
 .nosotros-logos img {
   height: auto;
   width: 8vmax;
   opacity: 0.8;
   transition: all 0.3s ease;
+}
+
+.logo2 {
+  width: 14vmax !important; 
+}
+
+.logo3 {
+  width: 6vmax !important; 
+}
+
+.logo5 {
+  width: 14vmax !important; 
 }
 
 .nosotros-logos img:hover {
@@ -93,6 +107,17 @@
 }
 
 /* ---------- Mobile ---------- */
+@media (max-width: 900px) { 
+
+  .nosotros-logos {
+    gap: 5vmax;
+    flex-wrap: wrap; 
+    padding: 1rem 0;
+    
+  }
+}
+
+
 @media (max-width: 768px) {
   .nosotros-hero {
     width: 90%;
@@ -109,5 +134,18 @@
     width: 90%;
     font-size: 1rem;
     line-height: 1.6;
+  }
+
+  .nosotros-logos {
+    gap: 9vmax;
+    flex-wrap: wrap; 
+    padding: 1rem 0;
+    
+  }
+
+  .nosotros-logos {
+    padding: 1rem 2rem;
+    gap: 3vmax;
+    
   }
 }

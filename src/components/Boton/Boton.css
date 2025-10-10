@@ -2,7 +2,7 @@
 .boton {
   font-family: 'Satoshi', sans-serif;
   font-size: 1rem;
-  padding: 0.8rem 1.6rem;
+  padding: 0.6rem 1.5rem;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -11,8 +11,9 @@
 
 /* Botón principal */
 .boton.primario {
-  background-color: #9A3EAA;
-  color: #FFFFFF;
+  background: linear-gradient(90deg,  #ffd5e5cc 10%, #b61ae5c1);
+  color: #000001;
+  font-weight: bold;
 }
 
 .boton.primario:hover {

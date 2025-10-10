@@ -2,7 +2,12 @@ import React from "react";
 import "./Nosotros.css";
 import nosotrosImg from "../../assets/nosotros.png";
 import Button from '../Boton/Boton';
-import logo1 from "../../assets/logotravel.png";
+import logo1 from "../../assets/white-tomate.png";
+import logo2 from "../../assets/white-travel.png";
+import logo3 from "../../assets/white-astron.png";
+import logo4 from "../../assets/white-tracker.png";
+import logo5 from "../../assets/white-it.png";
+import logo6 from "../../assets/white-profile.png";
 
 const Nosotros = () => {
   return (
@@ -11,15 +16,11 @@ const Nosotros = () => {
         {/* Fila de logos */}
       <div className="nosotros-logos">
         <img src={logo1} alt="Logo cliente 1" />
-        <img src={logo1} alt="Logo cliente 1" />
-        <img src={logo1} alt="Logo cliente 1" />
-        <img src={logo1} alt="Logo cliente 1" />
-        <img src={logo1} alt="Logo cliente 1" />
-        <img src={logo1} alt="Logo cliente 1" />
-        <img src={logo1} alt="Logo cliente 1" />
-        <img src={logo1} alt="Logo cliente 1" />
-        <img src={logo1} alt="Logo cliente 1" />
-        
+        <img src={logo2} alt="Logo cliente 2" className="logo2" />
+        <img src={logo3} alt="Logo cliente 3" className="logo3" />
+        <img src={logo4} alt="Logo cliente 4" />
+        <img src={logo5} alt="Logo cliente 5" className="logo5" />
+        <img src={logo6} alt="Logo cliente 6" />
       </div>
 
       <div

@@ -25,7 +25,7 @@
 
   /* Paleta de acentos */
   --pink: #DB519F;
-  --violet: #9A3EAA;
+  --violet: #B51AE5;
   --turquoise: #08E79D;
   --blue: #316ECE;
 
@@ -103,7 +103,7 @@ a:hover {
 =================================== */
 
 section {
-  padding: 100px 0;
+  /* padding: 100px 0; */
 }
 
 /* ================================
@@ -152,7 +152,7 @@ section {
 
 /* Botón principal (por ejemplo, WhatsApp o CTA destacado) */
 .btn.primary {
-  background: var(--pink);
+  background: var(--violet);
   color: var(--white);
 }
 

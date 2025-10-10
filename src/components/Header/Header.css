@@ -1,15 +1,22 @@
-.header {
-  /* padding: 4rem 0; */
-  /* color: #FFFFFF; */
-  /* font-family: 'Clash Grotesk', sans-serif; */
-  /* border: solid 2px yellow; */
-  margin-top: 12vmax;
-  /* border: solid 2px rgb(0, 255, 26); */
+.header-container{
+  position: relative; 
+  overflow: hidden; /* oculta la parte de la imagen que sobresale */ 
+  background-image: url('../../assets/luz-violeta.png');
+  background-repeat: no-repeat;
+  background-size: 80%; /* controla el tamaño visible de la imagen */
+  background-position: calc(100% + 160%) calc(100% + -70%);
+  margin: 10vmax  0 0 0;
+  width: 100%;
+  /* Altura responsive sin margin-top */
+  min-height: 60vh; /* ocupa el 60% del alto de la pantalla */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2vmax 0 6vmax 0;
 }
 
 .header-top {
   display: flex;
-
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -26,7 +33,7 @@
 }
 
 .header-logo img {
-    width: 80%;
+    width: 45%;
   display: flex;
   align-items: center;
   
@@ -38,9 +45,10 @@
 }
 
 .header-title h1 {
-  font-size:4vmax;
+  font-size:3.2vmax;
   font-weight: 600;
   color: var(--white);
+  
 }
 
 .header-subtitles {
@@ -51,7 +59,7 @@
 }
 
 .header-subtitles h2 {
-  font-size: 2vmax;
+  font-size: 1.5vmax;
   font-weight: 400;
   color: var(--white);
   text-align: center;
@@ -59,10 +67,12 @@
 }
 
 /* Mobile */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
 
-    .header {
-        margin-top: 18vmax;
+    .header-container {
+      margin-top: 15vmax;
+      background-size: 130%;
+      background-position: calc(100% + -220%) calc(100% + -180%);
     }
 
    .header-top {
@@ -79,7 +89,7 @@
   }
 
   .header-logo img {
-    width: 50%; /* más pequeño en mobile */
+    width: 40%; /* más pequeño en mobile */
   }
 
   .header-title {
@@ -99,5 +109,14 @@
 
   .header-subtitles h2 {
     font-size: 4vw; /* más pequeño en mobile */
+    padding: 0 3vmax;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .header-container {
+    background-size: 135%;
+    background-position: calc(100% + -150%) calc(100% + -280%);
   }
 }
