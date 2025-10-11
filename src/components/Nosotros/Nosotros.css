@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   align-content: flex-start;
-  margin-top: 4vmax;
+  margin-top: 1vmax;
   /* border: solid 2px rgb(21, 255, 0); */
   gap: 6vmax;
 }
@@ -96,6 +96,8 @@
   line-height: 1.2;
 }
 
+
+
 .nosotros-texto-extra p {
      color: var(--white);
      text-align: center;
@@ -137,7 +139,7 @@
   }
 
   .nosotros-logos {
-    gap: 9vmax;
+    gap: 10vmax;
     flex-wrap: wrap; 
     padding: 1rem 0;
     

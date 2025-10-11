@@ -1,19 +1,31 @@
 .header-container{
-  position: relative; 
-  overflow: hidden; /* oculta la parte de la imagen que sobresale */ 
+  /* position: relative; 
+  overflow: hidden; 
   background-image: url('../../assets/luz-violeta.png');
   background-repeat: no-repeat;
-  background-size: 80%; /* controla el tamaño visible de la imagen */
-  background-position: calc(100% + 160%) calc(100% + -70%);
-  margin: 10vmax  0 0 0;
+  background-size: 80%; 
+  background-position: calc(100% + 160%) calc(100% + -70%); */
+  margin: 0;
   width: 100%;
   /* Altura responsive sin margin-top */
   min-height: 60vh; /* ocupa el 60% del alto de la pantalla */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 2vmax 0 6vmax 0;
+  padding: 10vmax 0 6vmax 0;
+
+  background: linear-gradient(270deg, #05050500, #3003346f, #05050500);
+  background-size: 400% 400%;
+  animation: gradientShift 10s ease infinite;
 }
+
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 
 .header-top {
   display: flex;
@@ -48,6 +60,7 @@
   font-size:3.2vmax;
   font-weight: 600;
   color: var(--white);
+  line-height: 1.2;
   
 }
 
@@ -70,9 +83,10 @@
 @media (max-width: 900px) {
 
     .header-container {
-      margin-top: 15vmax;
+      /* margin-top: 15vmax; */
       background-size: 130%;
       background-position: calc(100% + -220%) calc(100% + -180%);
+      padding-top: 16vmax;
     }
 
    .header-top {

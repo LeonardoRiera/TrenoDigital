@@ -3,9 +3,11 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #0C0C0C;
+  background-color: #0c0c0cf9;
   z-index: 100;
   padding: 1rem 0;
+  /* height: 5vmax; */
+  /* border: solid 2px yellow; */
 }
 
 .navbar-container {
@@ -21,7 +23,7 @@
   align-items: center;
 }
 .navbar-logo img {
-  height: 35px;
+  height: 2vmax;
 }
 
 .navbar-links {
@@ -54,6 +56,11 @@
 }
 
 @media (max-width: 768px) {
+
+  .navbar-logo img {
+    height: 2.6vmax;
+  }
+
   /* Mostrar el icono hamburger */
   .navbar-hamburger {
     display: block;

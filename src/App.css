@@ -26,6 +26,7 @@
   /* Paleta de acentos */
   --pink: #DB519F;
   --violet: #B51AE5;
+  --violet-dark: #430755;
   --turquoise: #08E79D;
   --blue: #316ECE;
 
@@ -152,23 +153,29 @@ section {
 
 /* Botón principal (por ejemplo, WhatsApp o CTA destacado) */
 .btn.primary {
-  background: var(--violet);
+  background: var(--violet-dark);
   color: var(--white);
 }
 
 .btn.primary:hover {
-  background: var(--violet);
+  background: var(--violet-dark);
   transform: scale(1.04);
 }
 
 /* Botón secundario (opcional, para estilos más neutros) */
 .btn.secondary {
   background: transparent;
-  border: 2px solid var(--pink);
-  color: var(--pink);
+  border: 2px solid var(--violet-dark);
+  /* border: solid 2px yellow; */
+  color: var(--white);
+  font-weight: 800;
+  font-family: 'Satoshi', sans-serif;
 }
 
 .btn.secondary:hover {
-  background: var(--pink);
-  color: var(--white);
+  background: linear-gradient(90deg,  #ffd5e597 10%, #b61ae598);
+  /* background: var(--violet-dark); */
+  color: var(--black-card);
+  font-weight: 800;
+  border: black;
 }

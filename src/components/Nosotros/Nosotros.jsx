@@ -1,7 +1,7 @@
 import React from "react";
 import "./Nosotros.css";
 import nosotrosImg from "../../assets/nosotros.png";
-import Button from '../Boton/Boton';
+// import Button from '../Boton/Boton';
 import logo1 from "../../assets/white-tomate.png";
 import logo2 from "../../assets/white-travel.png";
 import logo3 from "../../assets/white-astron.png";
@@ -30,12 +30,16 @@ const Nosotros = () => {
         <h2>Trabajemos juntos en tu presencia online.</h2>
         <h3>Somos Artistas y diseñadores. Podemos hacer grandes cosas juntos.</h3>
         {/* Botón desktop */}
-        <div className="navbar-cta">
+        {/* <div className="navbar-cta">
           <Button
             texto={<> Nuestros Servicios</>}
-            tipo="primario"
-            // onClick={() => window.open('https://wa.me/tu-numero', '_blank')}
+            tipo="primario" */}
+           {/*  // onClick={() => window.open('https://wa.me/tu-numero', '_blank')}
           />
+        </div> */}
+
+        <div>
+          <button className="btn secondary">Nuestros Servicios</button>
         </div>
       </div>
 
