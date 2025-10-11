@@ -18,8 +18,8 @@ function Header() {
 
         {/* Segundo row: subtítulos */}
         <div className="header-subtitles row">
-          <h2>Somos Treno Digital. Tu agencia de diseño y desarrollo web</h2>
-          <h2>La imagen profesional que tu proyecto Necesita.</h2>
+          <h2>Somos Treno Digital. Tu agencia de Diseño y Desarrollo Web.<br/> Creamos la imagen profesional que tu proyecto Necesita.  </h2>
+          {/* <h2>Creamos la imagen profesional que tu proyecto Necesita.</h2> */}
         </div>
       </div>
     </header>

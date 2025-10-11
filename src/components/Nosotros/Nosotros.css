@@ -16,7 +16,7 @@
   gap: 5vmax;
   flex-wrap: nowrap; 
   margin-top: 0;
-  padding: 1rem 0;
+  padding: 0.5vmax 2vmax;
   /* border: solid 2px yellow; */
 }
 

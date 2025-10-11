@@ -148,7 +148,7 @@ section {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  /* transition: all 0.3s ease; */
 }
 
 /* Botón principal (por ejemplo, WhatsApp o CTA destacado) */
@@ -159,7 +159,7 @@ section {
 
 .btn.primary:hover {
   background: var(--violet-dark);
-  transform: scale(1.04);
+  /* transform: scale(1.04); */
 }
 
 /* Botón secundario (opcional, para estilos más neutros) */
