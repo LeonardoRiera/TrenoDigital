@@ -1,6 +1,6 @@
 import React from "react";
 import "./Nosotros.css";
-import nosotrosImg from "../../assets/nosotros.png";
+// import nosotrosImg from "../../assets/nosotros.png";
 import Button from '../Boton/Boton';
 import logo1 from "../../assets/white-tomate.png";
 import logo2 from "../../assets/white-travel.png";
@@ -24,10 +24,10 @@ const Nosotros = () => {
       </div>
 
       <div
-        className="nosotros-hero"
-        style={{ backgroundImage: `url(${nosotrosImg})` }}
-      >
-        <h2>Trabajemos juntos en tu presencia online.</h2>
+        className="nosotros-hero">
+        {/* // style={{ backgroundImage: `url(${nosotrosImg})` }} */}
+      
+        <h2>Trabajemos juntos en tu <br/> presencia online.</h2>
         <h3>Somos Brenda y Leo. Artistas y desarrolladores web. <br/>
             Fusionamos diseño gráfico y UX/UI para transformar ideas en experiencias digitales.
             {/* </h3> */}

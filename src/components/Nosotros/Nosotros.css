@@ -49,6 +49,7 @@
 .nosotros-hero {
   width: 80%;
   height: 60vh;
+  background-image: url(../../assets/nosotros.png);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -79,10 +80,11 @@
   position: relative;
   z-index: 1; /* asegura que el texto quede arriba del overlay */
   color: var(--white);
-  font-size: 3vmax;
+  font-size: 3vmax !important;
   font-weight: 600;
   max-width: 60%;
   line-height: 1.2;
+  /* border: solid 2px white; */
 }
 
 
@@ -95,14 +97,14 @@
   max-width: 40%;
   line-height: 1.4;
 }
-
+/* 
 .span-nosotros {
   font-weight: 500;
   margin-top: 2vmax;
   font-size: 2vmax;
 }
 
-
+ */
 .nosotros-texto-extra p {
      color: var(--white);
      text-align: center;
@@ -122,15 +124,18 @@
     padding: 1rem 0;
     
   }
+
+  .nosotros-hero {
+    width: 90%;
+    height: 100vh;
+    padding: 2rem;
+    background-image: url(../../assets/nosotros-mobile.png);
+  }
 }
 
 
-@media (max-width: 768px) {
-  .nosotros-hero {
-    width: 90%;
-    height: 50vh;
-    padding: 2rem;
-  }
+/* @media (max-width: 768px) { */
+
 
   .nosotros-hero h2 {
     font-size: 5vw;
@@ -155,4 +160,4 @@
     gap: 3vmax;
     
   }
-}
+/* } */
