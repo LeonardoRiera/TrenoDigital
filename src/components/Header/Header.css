@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 12vmax 0 6vmax 0;
+  padding: 8vmax 0 3vmax 0;
 
   background: linear-gradient(270deg, #05050500, #3003346f, #05050500);
   background-size: 400% 400%;
@@ -26,14 +26,14 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 3rem;
   /* border: solid 2px yellow; */
    
 }
 
 .header-logo {
   
-  width: 14vmax;
+  width: 16vmax;
   display: flex;  
   
 }
@@ -79,7 +79,7 @@
       /* margin-top: 15vmax; */
       background-size: 130%;
       background-position: calc(100% + -220%) calc(100% + -180%);
-      padding-top: 18vmax;
+      padding-top: 14vmax;
     }
 
    .header-top {
@@ -94,7 +94,8 @@
   .header-logo {
     justify-content: center; /* logo centrado en mobile */
     border: none; /* quitar border debug */
-    width: 16vmax;
+    width: 26vmax;
+    margin-right: 5vmax;
     /* border: solid 3px white; */
   }
 /* 
