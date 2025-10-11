@@ -79,7 +79,7 @@
       /* margin-top: 15vmax; */
       background-size: 130%;
       background-position: calc(100% + -220%) calc(100% + -180%);
-      padding-top: 14vmax;
+      padding-top: 10vmax;
     }
 
    .header-top {
@@ -94,7 +94,7 @@
   .header-logo {
     justify-content: center; /* logo centrado en mobile */
     border: none; /* quitar border debug */
-    width: 26vmax;
+    width: 30vmax;
     margin-right: 5vmax;
     /* border: solid 3px white; */
   }
