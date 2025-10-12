@@ -110,8 +110,7 @@
   }
 
   .header-title h1 {
-    font-size: 6vw; /* ajustar tamaño responsive */
-  }
+    font-size: 3.4vmax; 
 
   .header-subtitles {
     margin-top: 5vmax;
