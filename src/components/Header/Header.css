@@ -121,7 +121,7 @@
   .header-subtitles h2 {
     /* font-size: 4vw; */ /* más pequeño en mobile */
     font-size: 2vmax;
-    padding: 0 5vmax;
+    padding: 0 3vmax;
     font-weight: 500;
   }
 }
