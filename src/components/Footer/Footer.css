@@ -1,14 +1,7 @@
 .footer {
-  /* background: linear-gradient(270deg, #0a0a0a, #1c1c1c, #0a0a0a);
-  background-size: 400% 400%;
-  animation: gradientShift 12s ease infinite; */
-
   background: linear-gradient(270deg, #050505, #1b1b1b, #050505);
   background-size: 400% 400%;
   animation: gradientShift 10s ease infinite;
-
-
-
   color: var(--white);
   padding: 6vmax 0 2vmax 0;
   font-family: 'Clash Grotesk', sans-serif;
@@ -34,7 +27,6 @@
 .footer-col {
   flex: 1;
   min-width: 250px;
-  /* border: solid 2px white; */
 }
 
 .footer-logo {
@@ -119,6 +111,7 @@
   }
 
   .footer-logo {
-    margin: 0 auto 1rem auto;
+    margin: 0 3vmax 1rem auto;
+
   }
 }
