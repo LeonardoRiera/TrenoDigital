@@ -111,6 +111,7 @@
 
   .header-title h1 {
     font-size: 3.4vmax; 
+  }  
 
   .header-subtitles {
     margin-top: 5vmax;
@@ -119,7 +120,7 @@
 
   .header-subtitles h2 {
     /* font-size: 4vw; */ /* más pequeño en mobile */
-    font-size: 1.8vmax;
+    font-size: 2vmax;
     padding: 0 5vmax;
     font-weight: 500;
   }
