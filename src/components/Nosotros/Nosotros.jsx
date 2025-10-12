@@ -31,9 +31,9 @@ const Nosotros = () => {
 
           <Button
             texto={<> Hablemos de tu Proyecto</>}
-            tipo="primario"
+            tipo="secundario"
             onClick={() => window.open('https://wa.me/tu-numero', '_blank')}
-            className="navbar-cta"
+            className="about-button"
           />
          
         </div>
@@ -54,16 +54,6 @@ const Nosotros = () => {
   );
 };
 
-
-
-{/* Botón desktop */}
-        {/* <div className="navbar-cta">
-          <Button
-            texto={<> Hablemos de tu Proyecto</>}
-            tipo="primario"
-            onClick={() => window.open('https://wa.me/tu-numero', '_blank')}
-          />
-        </div> */}
 
 
 

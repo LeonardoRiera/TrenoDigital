@@ -81,7 +81,7 @@
   font-size: 3vmax !important;
   font-weight: 600;
   line-height: 1.2;
-  
+
 }
 
 
@@ -92,14 +92,16 @@
   line-height: 1.4;
 }
 
+
 .nosotros-texto-extra p {
   color: var(--white);
   text-align: center;
   font-size: 1.5vmax;
   font-weight: 400;
- width: 60%;
+  width: 70%;
   line-height: 1.2;
-  margin: 0 auto;
+  margin: 0 auto 4vmax auto;
+  
 }
 
 /* ---------- Mobile ---------- */
@@ -115,9 +117,10 @@
   .nosotros-hero {
     width: 80%;
     flex-direction: column-reverse;
-    background-size: 200%;      
+    background-size: 230%;      
     background-position: center calc(100% + 140px);
     background-repeat: no-repeat; 
+    gap: 4vmax;
    
   }
 
@@ -129,6 +132,35 @@
   .nosotros-img {
     width: 100%;
     margin: 0;
+    
+  }
+
+  .card-text {
+    gap: 4vmax;
+    
+  }
+  .titulo-card {
+    text-align: center;
+    font-size: 3.4vmax !important;
+    
+
+  }
+
+
+  .nosotros-hero h3 {
+    font-size: 2vmax;
+    text-align: center;
+    padding: 0 1vmax;
+  }
+
+  .nosotros-texto-extra p {
+    color: var(--white);
+    text-align: center;
+    font-size: 2vmax;
+    font-weight: 400;
+    width: 90%;
+    line-height: 1.2;
+    margin: 0 auto 4vmax auto;
     
   }
 }
