@@ -8,10 +8,11 @@
 }
 
 .planes-titulo {
-  font-size: 1.8rem;
+  font-size: 2.6vmax;
   font-weight: 500;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0 auto 4vmax auto;
+  /* border: solid 2px purple; */
 }
 
 .planes-container {
