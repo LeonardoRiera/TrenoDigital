@@ -33,7 +33,7 @@ function Servicios() {
           <h3>Branding</h3>
           <p>
             Construimos y fortalecemos tu marca. Logotipos, identidad visual y
-            materiales gráficos coherentes para potenciar tu presencia.
+            materiales gráficos coherentes para potenciar tu proyecto.
           </p>
         </div>
 

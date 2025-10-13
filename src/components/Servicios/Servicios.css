@@ -20,9 +20,10 @@
 .servicios-title {
   font-size: 3vmax;
   font-weight: 600;
-  margin-bottom: 6vmax;
+  margin-bottom: 3vmax;
   font-family: 'Clash Grotesk', sans-serif;
   letter-spacing: 0.05em;
+
 }
 
 .servicios-container {
@@ -31,7 +32,10 @@
   align-items: stretch;
   flex-wrap: wrap;
   width: 80%;
-  margin: 0 auto;
+  margin: 0 auto 6vmax auto;
+  /*   border: solid 0.6px purple;
+    padding: 2vmax;
+    border-radius: 5vmax; */
 }
 
 .servicio-card {
@@ -48,7 +52,7 @@
 }
 
 .servicio-card h3 {
-  font-size: 2vmax;
+  font-size: 1.8vmax;
   font-weight: 600;
   font-family: 'Clash Grotesk', sans-serif;
   color: var(--white);
@@ -198,6 +202,13 @@
     align-items: center;
   }
 
+  .servicios-title {
+    font-size: 4vmax;
+
+  /*   margin-bottom: 4vmax;
+    margin-top: 3vmax; */
+  }
+
   .servicio-card.bordered {
     border: none;
     border-top: 1px solid rgba(255, 255, 255, 0.15);
@@ -208,6 +219,7 @@
     padding: 2rem 1rem;
     max-width: 90%;
   }
+
 
    .nosotros-mensaje {
     flex-direction: column;
