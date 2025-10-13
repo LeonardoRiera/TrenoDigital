@@ -39,7 +39,11 @@ function Portfolio() {
   };
 
   return (
+    
     <section className="portfolio-slider">
+        <div className="portfolio-titulo">
+            <h2>Trabajos Treno</h2>
+        </div>
       <Slider {...settings}>
         {portfolioImages.map((img, index) => (
           <div key={index}>
