@@ -1,15 +1,25 @@
-
-/* Contenedor de los planes */
-.planes-container {
-  display: flex;
-  justify-content: center;
-  gap: 4vmax;
-  width: 80%;
-  margin: 1vmax auto 0 auto;
-  flex-wrap: wrap;
-  /* border: solid 3px red; */
+.planes-section {
+  padding: 2rem 0;
 }
 
+.planes-titulo-row {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.planes-titulo {
+  font-size: 1.8rem;
+  font-weight: 500;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.planes-container {
+  display: flex;
+  gap: 6vmax;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 /* Cada card individual */
 .plan-card {
   background-color: #1b1b1b; /* oscuro pero distinto al fondo */
