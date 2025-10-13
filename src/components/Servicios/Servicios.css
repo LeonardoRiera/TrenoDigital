@@ -202,13 +202,19 @@
     align-items: center;
   }
 
+    
+  .icono-brote {
+    margin-top: 10vmax;
+  }
+
   .servicios-title {
     font-size: 4vmax;
 
-  /*   margin-bottom: 4vmax;
-    margin-top: 3vmax; */
+    margin-bottom: 2vmax;
+  
   }
 
+ 
   .servicio-card.bordered {
     border: none;
     border-top: 1px solid rgba(255, 255, 255, 0.15);
