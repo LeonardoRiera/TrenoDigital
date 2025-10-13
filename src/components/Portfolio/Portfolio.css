@@ -1,0 +1,38 @@
+.portfolio-slider {
+  width: 100vw; /* ancho total de la ventana */
+  max-width: 100%; 
+  margin: 0 auto;
+}
+
+.slider-img {
+  width: 70%;
+  margin: 0 auto 4vmax auto;
+  height: 70vh; /* ocupa gran parte de la pantalla, ajusta según diseño */
+  object-fit: cover; /* mantiene proporción y cubre todo el contenedor */
+}
+
+.slick-dots {
+  bottom: 15px; /* posición de los puntos */
+}
+
+.slick-prev, .slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 2rem;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.slick-prev {
+  left: 10px;
+}
+
+.slick-next {
+  right: 10px;
+}

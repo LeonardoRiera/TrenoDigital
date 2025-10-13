@@ -1,0 +1,81 @@
+
+/* Contenedor de los planes */
+.planes-container {
+  display: flex;
+  justify-content: center;
+  gap: 4vmax;
+  width: 80%;
+  margin: 1vmax auto 0 auto;
+  flex-wrap: wrap;
+  /* border: solid 3px red; */
+}
+
+/* Cada card individual */
+.plan-card {
+  background-color: #1b1b1b; /* oscuro pero distinto al fondo */
+  color: white;
+  padding: 3rem 2rem;
+  border-radius: 1.5rem;
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+  
+}
+
+/* Efecto hover */
+.plan-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Título de la card */
+.plan-card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  font-family: 'Clash Grotesk', sans-serif;
+}
+
+/* Texto descriptivo */
+.plan-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* Precio destacado */
+.plan-card .precio {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #ea39ac; /* dorado o amarillo para resaltar */
+}
+
+
+/* Icono en la card */
+.plan-card .plan-icon {
+  width: 60px;          /* tamaño del icono */
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+/* Separador debajo del texto */
+.plan-card hr {
+  width: 60%;           /* solo el 60% de la card */
+  margin: 1.5rem auto;  /* centrado horizontal y espacio vertical */
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.cta-servicios {
+    text-align: center;
+    margin: 4vmax auto 1vmax auto;
+    width: 40%;
+}
+
+.cta-servicios h3 {
+    font-size: 2vmax;
+    margin-top: 2vmax;
+}

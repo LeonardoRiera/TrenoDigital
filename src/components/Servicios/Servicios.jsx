@@ -48,7 +48,19 @@ function Servicios() {
         </div>
       </div>
 
-      <section className="nosotros-mensaje">
+        
+    </section>
+
+  );
+}
+
+export default Servicios;
+
+
+
+
+
+      {/* <section className="nosotros-mensaje">
       <div className="columna-imagen">
         <img src={equipo} alt="Equipo creativo" />
       </div>
@@ -62,46 +74,42 @@ function Servicios() {
         </p>
         
       </div>
-        </section>
+        </section> */}
 
         {/* Nuevo row de planes con precios */}
-<div className="planes-container">
+
+{/* <div className="planes-container"> */}
   {/* Diseño Web */}
-  <div className="plan-card">
+  {/* <div className="plan-card">
     <h3>Diseño Web</h3>
     <img src={logonav} alt="Icono Diseño Web" className="plan-icon" />
     <p>Landing pages, portfolios y tiendas online adaptadas a tu marca.</p>
     <hr/>
     <p className="precio">Planes desde: $30.000</p>
-  </div>
+  </div> */}
 
   {/* Branding */}
-  <div className="plan-card">
+  {/* <div className="plan-card">
     <h3>Branding</h3>
     <img src={logonav} alt="Icono Diseño Web" className="plan-icon" />
     <p>Construcción de logotipos e identidad visual coherente para tu marca.</p>
     <hr/>
     <p className="precio">Planes desde: $30.000</p>
-  </div>
+  </div> */}
 
   {/* Redes Sociales */}
-  <div className="plan-card">
+  {/* <div className="plan-card">
     <h3>Redes Sociales</h3>
     <img src={logonav} alt="Icono Diseño Web" className="plan-icon" />
     <p>Estrategia y diseño de contenido visual para feeds, stories y anuncios.</p>
     <hr/>
     <p className="precio">Planes desde: $30.000</p>
   </div>
-</div>
-
+</div> */}
+{/* 
 <div className='cta-servicios'>
     <h2>¿Tenés Una idea en mente? Consultá sin cargo y descubrí cómo podemos ayudarte a hacerla realidad.</h2>
     <h3>Hablemos por WhatsApp!</h3>
-</div>
+</div> */}
 
-    </section>
-
-  );
-}
-
-export default Servicios;
+   

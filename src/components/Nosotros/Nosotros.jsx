@@ -28,8 +28,8 @@ const Nosotros = () => {
         <div className="card-text">
           <h2 className="titulo-card">Trabajemos juntos en tu presencia online.</h2>
           <h3>Somos Brenda y Leo, desarrolladores y diseñadores UX/UI. <br/>
-              Creamos experiencias digitales que impulsan proyectos con propósito. <br/>
-             <span className="span-nosotros"> Cuando tu presencia online refleja tu esencia, los resultados se ven en el mundo real.</span> </h3> 
+              Creamos experiencias digitales que impulsan proyectos con propósito. {/* <br/>
+             <span className="span-nosotros"> Cuando tu presencia online refleja tu esencia, los resultados se ven en el mundo real.</span> */} </h3> 
 
           <Button
             texto={<> Hablemos de tu Proyecto</>}
