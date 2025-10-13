@@ -8,10 +8,19 @@
   padding-top: 1vmax;
 }
 
+.icono-brote {
+  margin-top: 6vmax;
+}
+
+
+.icono-card-chica {
+  width: 2.5vmax;
+}
+
 .servicios-title {
-  font-size: 2.5vmax;
+  font-size: 3vmax;
   font-weight: 600;
-  margin-bottom: 4vmax;
+  margin-bottom: 6vmax;
   font-family: 'Clash Grotesk', sans-serif;
   letter-spacing: 0.05em;
 }
@@ -30,6 +39,7 @@
   padding: 2rem;
   min-width: 250px;
   max-width: 400px;
+  
 }
 
 .servicio-card.bordered {
@@ -38,7 +48,7 @@
 }
 
 .servicio-card h3 {
-  font-size: 1.6vmax;
+  font-size: 2vmax;
   font-weight: 600;
   font-family: 'Clash Grotesk', sans-serif;
   color: var(--white);

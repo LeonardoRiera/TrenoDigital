@@ -27,7 +27,9 @@ const Nosotros = () => {
       <div className="nosotros-hero">
         <div className="card-text">
           <h2 className="titulo-card">Trabajemos juntos en tu presencia online.</h2>
-          <h3>Somos Brenda y Leo. Artistas y desarrolladores web. <br/>Fusionamos diseño gráfico y UX/UI para transformar ideas en experiencias digitales.</h3> 
+          <h3>Somos Brenda y Leo, desarrolladores y diseñadores UX/UI. <br/>
+              Creamos experiencias digitales que impulsan proyectos con propósito. <br/>
+             <span className="span-nosotros"> Cuando tu presencia online refleja tu esencia, los resultados se ven en el mundo real.</span> </h3> 
 
           <Button
             texto={<> Hablemos de tu Proyecto</>}
@@ -42,14 +44,14 @@ const Nosotros = () => {
  
       </div>
 
-      <div className="nosotros-texto-extra">
+      {/* <div className="nosotros-texto-extra">
           <p>
               En Treno Digital reafirmamos el compromiso que nos ha acompañado a lo largo de los años:
               crear, crecer y acompañar a quienes confían en nosotros. Este nuevo proyecto nace del mismo
               espíritu con el que trabajamos siempre — dedicación, constancia y una búsqueda permanente
               de calidad y evolución.
           </p>
-      </div>
+      </div> */}
     </section>
   );
 };

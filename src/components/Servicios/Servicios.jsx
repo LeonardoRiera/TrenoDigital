@@ -2,17 +2,24 @@ import React from 'react';
 import './Servicios.css';
 import equipo from "../../assets/moodboard.png"; // tu imagen de fondo
 import logonav from "../../assets/logonav.png"; // tu icono
+import icono1 from '../../assets/icons/siembra-manual.png';
+import icono2 from '../../assets/icons/navegador-de-experiencia.png';
+import icono3 from '../../assets/icons/almuerzo-cohete.png';
+import icono4 from '../../assets/icons/megafono-mundial.png';
+
 
 function Servicios() {
   return (
     <section className="servicios" id="servicios">
       {/* Título principal */}
+      <img src={icono1} alt="mano que sostiene un brote" className='icono-brote'/>
       <h2 className="servicios-title">Lo que hacemos</h2>
 
       {/* Contenedor de columnas */}
       <div className="servicios-container">
         {/* Diseño Web */}
         <div className="servicio-card">
+          <img src={icono2} alt="mano que sostiene un brote" className='icono-card-chica'/>
           <h3>Diseño Web</h3>
           <p>
             Sitios funcionales y visuales que reflejan la identidad de tu marca.
@@ -22,6 +29,7 @@ function Servicios() {
 
         {/* Branding */}
         <div className="servicio-card bordered">
+          <img src={icono3} alt="mano que sostiene un brote" className='icono-card-chica'/>
           <h3>Branding</h3>
           <p>
             Construimos y fortalecemos tu marca. Logotipos, identidad visual y
@@ -31,6 +39,7 @@ function Servicios() {
 
         {/* Redes Sociales */}
         <div className="servicio-card">
+          <img src={icono4} alt="mano que sostiene un brote" className='icono-card-chica'/>
           <h3>Redes Sociales</h3>
           <p>
             Estrategia y diseño de contenido visual. Packs para feeds, stories y
