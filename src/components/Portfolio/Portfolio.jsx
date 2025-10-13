@@ -8,20 +8,34 @@ import proyecto3 from "../../assets/portfolio/3.png";
 import proyecto4 from "../../assets/portfolio/4.png";
 import proyecto5 from "../../assets/portfolio/5.png";
 
+// Flechas personalizadas vacías para eliminar tooltips
+const PrevArrow = (props) => {
+  const { onClick } = props;
+  return <button className="slick-prev" onClick={onClick} />;
+};
+
+const NextArrow = (props) => {
+  const { onClick } = props;
+  return <button className="slick-next" onClick={onClick} />;
+};
+
 function Portfolio() {
   const portfolioImages = [proyecto1, proyecto2, proyecto3, proyecto4, proyecto5];
 
   const settings = {
-    dots: true, // puntos de navegación
-    infinite: true, // loop infinito
-    speed: 500, // transición 0.5s
-    slidesToShow: 1, // mostrar una imagen a la vez
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: true, // flechas
+    arrows: true,
     autoplay: true,
-    autoplaySpeed: 3000,
-    adaptiveHeight: true, // ajusta altura al contenido
-    lazyLoad: "ondemand", // opcional: mejora performance
+    autoplaySpeed: 4000,
+    adaptiveHeight: true,
+    lazyLoad: "ondemand",
+    swipe: true,
+    prevArrow: <PrevArrow />,
+    nextArrow: <NextArrow />,
   };
 
   return (

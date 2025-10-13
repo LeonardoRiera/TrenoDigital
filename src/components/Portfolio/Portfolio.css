@@ -1,21 +1,24 @@
 .portfolio-slider {
-  width: 100vw; /* ancho total de la ventana */
-  max-width: 100%; 
+  width: 70%; /* Desktop */
   margin: 0 auto;
+  position: relative;
 }
 
 .slider-img {
-  width: 70%;
-  margin: 0 auto 4vmax auto;
-  height: 70vh; /* ocupa gran parte de la pantalla, ajusta según diseño */
-  object-fit: cover; /* mantiene proporción y cubre todo el contenedor */
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  object-position: center;
 }
 
+/* Dots de navegación */
 .slick-dots {
-  bottom: 15px; /* posición de los puntos */
+  bottom: 15px;
 }
 
-.slick-prev, .slick-next {
+/* Flechas */
+.slick-prev,
+.slick-next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -27,12 +30,33 @@
   font-size: 2rem;
   border-radius: 50%;
   z-index: 2;
+  /* eliminamos tooltips */
+  outline: none;
 }
 
+/* Más cerca del contenido */
 .slick-prev {
-  left: 10px;
+  left: 5%;
 }
 
 .slick-next {
-  right: 10px;
+  right: 5%;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .portfolio-slider {
+    width: 100%; /* ocupa todo el ancho */
+  }
+
+  .slider-img {
+    height: 50vh; /* menos alto para mostrar más contenido */
+    object-position: center top; /* centra la parte superior */
+  }
+
+  .slick-prev,
+  .slick-next {
+    font-size: 1.5rem;
+    padding: 0.3rem 0.6rem;
+  }
 }
