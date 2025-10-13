@@ -11,7 +11,7 @@
   width: 80%; /* Desktop */
   margin: 0 auto 4vmax auto;
   position: relative;
-  border: solid 3px yellow;
+  /* border: solid 3px yellow; */
 }
 
 .slider-img {
