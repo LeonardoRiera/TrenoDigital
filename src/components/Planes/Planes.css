@@ -1,52 +1,72 @@
 .planes-section {
-  padding: 2rem 0;
+  padding: 3rem 0;
+  background-color: var(--black-bg);
 }
 
 .planes-titulo-row {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .planes-titulo {
-  font-size: 2.6vmax;
-  font-weight: 500;
-  max-width: 800px;
-  margin: 0 auto 4vmax auto;
-  /* border: solid 2px purple; */
+  font-size: 2.5vmax;
+  font-weight: 600;
+  max-width: 900px;
+  margin: 0 auto 5vmax auto;
+  line-height: 1.4;
+  color: #fff;
 }
 
+/* Contenedor de cards */
 .planes-container {
   display: flex;
-  gap: 6vmax;
+  gap: 4vmax;
   justify-content: center;
   flex-wrap: wrap;
 }
+
 /* Cada card individual */
 .plan-card {
-  background-color: #1b1b1b; /* oscuro pero distinto al fondo */
-  color: white;
+  background: linear-gradient(145deg, #1b1b1b, #242424);
+  color: #fff;
   padding: 3rem 2rem;
-  border-radius: 1.5rem;
+  border-radius: 2rem;
   flex: 1;
-  min-width: 250px;
-  max-width: 300px;
+  min-width: 260px;
+  max-width: 320px;
   text-align: center;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s, box-shadow 0.3s;
-  
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+  position: relative;
+  overflow: hidden;
 }
 
-/* Efecto hover */
+/* Efecto hover moderno */
 .plan-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+  background: linear-gradient(145deg, #242424, #1b1b1b);
+}
+
+/* Icono en la card */
+.plan-card .plan-icon {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 1.5rem;
+  filter: brightness(1.2); /* hace que los iconos resalten un poco */
+  transition: transform 0.3s ease;
+}
+
+.plan-card:hover .plan-icon {
+  transform: scale(1.1);
 }
 
 /* Título de la card */
 .plan-card h3 {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   margin-bottom: 1rem;
   font-family: 'Clash Grotesk', sans-serif;
+  color: #fff;
 }
 
 /* Texto descriptivo */
@@ -54,39 +74,63 @@
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 2rem;
-  color: rgba(255, 255, 255, 0.85);
-}
-
-/* Precio destacado */
-.plan-card .precio {
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: #ea39ac; /* dorado o amarillo para resaltar */
-}
-
-
-/* Icono en la card */
-.plan-card .plan-icon {
-  width: 60px;          /* tamaño del icono */
-  height: 60px;
-  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 /* Separador debajo del texto */
 .plan-card hr {
-  width: 60%;           /* solo el 60% de la card */
-  margin: 1.5rem auto;  /* centrado horizontal y espacio vertical */
+  width: 60%;
+  margin: 1.5rem auto;
   border: 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+/* Precio destacado */
+.plan-card .precio {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #ea39ac;
+  transition: color 0.3s ease;
+}
+
+.plan-card:hover .precio {
+  color: #ff7bc3;
+}
+
+/* CTA debajo de las cards */
 .cta-servicios {
-    text-align: center;
-    margin: 4vmax auto 1vmax auto;
-    width: 40%;
+  text-align: center;
+  margin: 5vmax auto 2vmax auto;
+  width: 40%;
 }
 
 .cta-servicios h3 {
-    font-size: 2vmax;
-    margin-top: 2vmax;
+  font-size: 2vmax;
+  margin-top: 2vmax;
+  color: #fff;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .planes-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .planes-titulo {
+    font-size: 4vmax;
+    max-width: 90%;
+    margin-bottom: 4vmax;
+  }
+
+  .plan-card {
+    max-width: 90%;
+    padding: 2.5rem 1.5rem;
+  }
+
+  .plan-card .plan-icon {
+    width: 60px;
+    height: 60px;
+  }
 }
