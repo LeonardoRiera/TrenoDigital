@@ -1,5 +1,7 @@
 import React from "react";
-import logonav from "../../assets/logonav.png"; // ajusta la ruta según tu proyecto
+import icono2 from "../../assets/icons/navegador-de-experiencia.png"; // ajusta la ruta según tu proyecto
+import icono3 from "../../assets/icons/almuerzo-cohete.png";
+import icono4 from "../../assets/icons/megafono-mundial.png";
 import "./Planes.css";
 
 const planesData = [
@@ -7,19 +9,19 @@ const planesData = [
     titulo: "Diseño Web",
     descripcion: "Landing pages, portfolios y tiendas online adaptadas a tu marca.",
     precio: "$30.000",
-    icono: logonav,
+    icono: icono2,
   },
   {
     titulo: "Branding",
     descripcion: "Construcción de logotipos e identidad visual coherente para tu marca.",
     precio: "$30.000",
-    icono: logonav,
+    icono: icono3,
   },
   {
     titulo: "Redes Sociales",
     descripcion: "Estrategia y diseño de contenido visual para feeds, stories y anuncios.",
     precio: "$30.000",
-    icono: logonav,
+    icono: icono4,
   },
 ];
 

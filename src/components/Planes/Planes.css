@@ -50,8 +50,8 @@
 
 /* Icono en la card */
 .plan-card .plan-icon {
-  width: 70px;
-  height: 70px;
+  width: 3vmax;
+  height: 3vmax;
   margin-bottom: 1.5rem;
   filter: brightness(1.2); /* hace que los iconos resalten un poco */
   transition: transform 0.3s ease;
@@ -63,10 +63,11 @@
 
 /* Título de la card */
 .plan-card h3 {
-  font-size: 1.7rem;
+  font-size: 1.8vmax;
   margin-bottom: 1rem;
   font-family: 'Clash Grotesk', sans-serif;
-  color: #fff;
+  font-weight: 400;
+  color:var(--white);
 }
 
 /* Texto descriptivo */
@@ -89,7 +90,7 @@
 .plan-card .precio {
   font-size: 1.4rem;
   font-weight: 700;
-  color: #ea39ac;
+  color: #c73694;
   transition: color 0.3s ease;
 }
 
