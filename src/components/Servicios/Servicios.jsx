@@ -20,10 +20,11 @@ function Servicios() {
         {/* Diseño Web */}
         <div className="servicio-card">
           <img src={icono2} alt="mano que sostiene un brote" className='icono-card-chica'/>
-          <h3>Diseño Web</h3>
+          <h3>Diseño y Desarrollo Web</h3>
           <p>
-            Sitios funcionales y visuales que reflejan la identidad de tu marca.
-            Landing pages, portfolios y tiendas online adaptadas a cada necesidad.
+            Creamos sitios web funcionales, modernos y adaptados a la identidad de cada proyecto. 
+            Desde landings efectivas hasta portfolios profesionales o artísticos, cuidamos cada detalle para que tu 
+            presencia digital destaque y comunique.
           </p>
         </div>
 
@@ -32,18 +33,18 @@ function Servicios() {
           <img src={icono3} alt="mano que sostiene un brote" className='icono-card-chica'/>
           <h3>Branding</h3>
           <p>
-            Construimos y fortalecemos tu marca. Logotipos, identidad visual y
-            materiales gráficos coherentes para potenciar tu proyecto.
+            Construimos y fortalecemos la identidad de tu marca desde el principio.
+            Creamos logotipos, paletas de color y recursos que te ayuden a profesionalizar tu proyecto.
           </p>
         </div>
 
         {/* Redes Sociales */}
         <div className="servicio-card">
           <img src={icono4} alt="mano que sostiene un brote" className='icono-card-chica'/>
-          <h3>Redes Sociales</h3>
+          <h3>Redes Sociales y Eventos</h3>
           <p>
-            Estrategia y diseño de contenido visual. Packs para feeds, stories y
-            anuncios que comunican con estilo y consistencia.
+            Diseñamos contenido visual para redes sociales, lanzamientos y eventos.
+            Material gráfico para comunicar con estilo y coherencia, potenciando la identidad de tu marca en cada publicación o presentación.
           </p>
         </div>
       </div>
@@ -58,58 +59,3 @@ export default Servicios;
 
 
 
-
-
-      {/* <section className="nosotros-mensaje">
-      <div className="columna-imagen">
-        <img src={equipo} alt="Equipo creativo" />
-      </div>
-
-      <div className="columna-texto">
-        <p className="mensaje-texto">
-          Creemos en el trabajo bien hecho, en los proyectos que crecen paso a paso, 
-          y en acompañar a cada cliente con compromiso real.  
-          <br />
-          <strong>Tu marca también puede transformarse en una historia sólida y visible.</strong>
-        </p>
-        
-      </div>
-        </section> */}
-
-        {/* Nuevo row de planes con precios */}
-
-{/* <div className="planes-container"> */}
-  {/* Diseño Web */}
-  {/* <div className="plan-card">
-    <h3>Diseño Web</h3>
-    <img src={logonav} alt="Icono Diseño Web" className="plan-icon" />
-    <p>Landing pages, portfolios y tiendas online adaptadas a tu marca.</p>
-    <hr/>
-    <p className="precio">Planes desde: $30.000</p>
-  </div> */}
-
-  {/* Branding */}
-  {/* <div className="plan-card">
-    <h3>Branding</h3>
-    <img src={logonav} alt="Icono Diseño Web" className="plan-icon" />
-    <p>Construcción de logotipos e identidad visual coherente para tu marca.</p>
-    <hr/>
-    <p className="precio">Planes desde: $30.000</p>
-  </div> */}
-
-  {/* Redes Sociales */}
-  {/* <div className="plan-card">
-    <h3>Redes Sociales</h3>
-    <img src={logonav} alt="Icono Diseño Web" className="plan-icon" />
-    <p>Estrategia y diseño de contenido visual para feeds, stories y anuncios.</p>
-    <hr/>
-    <p className="precio">Planes desde: $30.000</p>
-  </div>
-</div> */}
-{/* 
-<div className='cta-servicios'>
-    <h2>¿Tenés Una idea en mente? Consultá sin cargo y descubrí cómo podemos ayudarte a hacerla realidad.</h2>
-    <h3>Hablemos por WhatsApp!</h3>
-</div> */}
-
-   

@@ -55,28 +55,6 @@
   background: linear-gradient(145deg, #242424, #1b1b1b);
 }
 
-/* Borde sutil con degradado diagonal usando pseudo-elemento */
-.plan-card::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  border-radius: 2rem;
-  padding: 0.6px; /* grosor del borde */
-  background: linear-gradient(135deg, #000000cd, #34125ad0);
-  -webkit-mask: 
-    linear-gradient(#fff 0 0) content-box, 
-    linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-          mask-composite: exclude; 
-  pointer-events: none; 
-  z-index: 1;
-}
-
-/* Contenido de la card encima del borde */
-/* .plan-card > * {
-  position: relative;
-  z-index: 2;
-} */
 
 
 /* Icono */
@@ -173,8 +151,8 @@
   }
 
   .planes-titulo {
-    font-size: 4vmax;
-    max-width: 90%;
+    font-size: 3vmax;
+    padding: 1vmax 2vmax;
     margin-bottom: 4vmax;
   }
 
