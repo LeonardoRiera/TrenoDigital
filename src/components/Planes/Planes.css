@@ -61,14 +61,14 @@
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
   border-radius: 2rem;
-  padding: 1px; /* grosor del borde */
-  background: linear-gradient(135deg, #000000cd, #34125ad0); /* turquesa a violeta */
+  padding: 0.6px; /* grosor del borde */
+  background: linear-gradient(135deg, #000000cd, #34125ad0);
   -webkit-mask: 
     linear-gradient(#fff 0 0) content-box, 
     linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
           mask-composite: exclude; 
-  pointer-events: none; /* no interfiere con hover o clicks */
+  pointer-events: none; 
   z-index: 1;
 }
 
@@ -149,6 +149,19 @@
 
 .plan-card:hover .precio {
   color: #ff7bc3;
+}
+
+/* responsive */
+
+
+@media (max-width: 1091px) {
+
+  
+.planes-titulo {
+  font-size: 4vmax;
+  padding: 1vmax 4vmax;
+}
+
 }
 
 /* Mobile */
