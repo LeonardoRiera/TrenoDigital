@@ -229,6 +229,15 @@
     max-width: 90%;
   }
 
+    
+  .icono-card-chica {
+    width: 3.5vmax;
+  }
+
+  
+  .servicio-card h3 {
+    font-size: 2.4vmax;
+  }
 
    .nosotros-mensaje {
     flex-direction: column;

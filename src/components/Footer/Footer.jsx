@@ -5,7 +5,7 @@ import { FaInstagram, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer" id="contacto">
       <div className="footer-container">
         
         {/* Columna 1: Logo y descripción */}

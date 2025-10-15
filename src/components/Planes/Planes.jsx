@@ -45,7 +45,7 @@ const planesData = [
 
 const Planes = () => {
   return (
-    <section className="planes-section">
+    <section className="planes-section" id="planes">
       <div className="planes-titulo-row">
         <h2 className="planes-titulo">
           Cuando tu presencia online refleja tu esencia, los resultados se ven en el mundo real.

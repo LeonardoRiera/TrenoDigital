@@ -10,6 +10,8 @@
   /* border: solid 2px yellow; */
 }
 
+
+
 .navbar-container {
   display: flex;
   justify-content: space-between;
@@ -21,6 +23,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .navbar-logo img {
   height: 2vmax;
@@ -32,6 +35,8 @@
   gap: 2rem;
 }
 
+
+
 .navbar-links li a {
   color: var(--white);
   font-family: 'Satoshi', sans-serif;
@@ -41,6 +46,11 @@
 
 .navbar-links li a:hover {
   color: #DB519F;
+}
+
+.navbar-links a.active {
+  color: #DB519F; /* o el color que prefieras para el activo */
+  font-weight: 600;
 }
 
 .navbar-cta {

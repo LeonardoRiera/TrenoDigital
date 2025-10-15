@@ -40,7 +40,7 @@ function Portfolio() {
 
   return (
     
-    <section className="portfolio-slider">
+    <section className="portfolio-slider" id="portfolio">
         <div className="portfolio-titulo">
             <h2>Nuestros Trabajos</h2>
         </div>

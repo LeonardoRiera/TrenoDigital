@@ -12,7 +12,7 @@ import nosotros from "../../assets/nosotros.webp";
 
 const Nosotros = () => {
   return (
-    <section className="nosotros">
+    <section className="nosotros" id="nosotros">
 
         {/* Fila de logos */}
       <div className="nosotros-logos">
