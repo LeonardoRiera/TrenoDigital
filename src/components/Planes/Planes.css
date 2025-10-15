@@ -14,7 +14,9 @@
   max-width: 900px;
   margin: 0 auto 5vmax auto;
   line-height: 1.4;
-  color: #fff;
+  background: linear-gradient(90deg, #d856ffc1   0%, #ffd5e5cc  47%, #ffd5e5cc  53%, #d856ffc1  100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* Contenedor de cards */
