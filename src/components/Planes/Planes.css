@@ -3,6 +3,10 @@
   background-color: var(--black-bg);
 }
 
+
+
+
+
 .planes-titulo-row {
   text-align: center;
   margin-bottom: 3rem;
@@ -14,7 +18,7 @@
   max-width: 900px;
   margin: 0 auto 5vmax auto;
   line-height: 1.4;
-  background: linear-gradient(90deg, #d856ffc1   0%, #ffd5e5cc  47%, #ffd5e5cc  53%, #d856ffc1  100%);
+  background: linear-gradient(90deg, #d856ffc1 0%, #ffd5e5cc 47%, #ffd5e5cc 53%, #d856ffc1 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -27,35 +31,60 @@
   flex-wrap: wrap;
 }
 
-/* Cada card individual */
+/* Card individual */
 .plan-card {
-  background: linear-gradient(145deg, #1b1b1b, #242424);
+  background: linear-gradient(145deg, #111010, #161616);
   color: #fff;
-  padding: 3rem 2rem;
+  padding: 2vmax;
   border-radius: 2rem;
-  flex: 1;
+  /* flex: 1; */
+  align-self: flex-start;
   min-width: 260px;
-  max-width: 320px;
+  max-width: 340px;
   text-align: center;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
   transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
   position: relative;
   overflow: hidden;
+
 }
 
-/* Efecto hover moderno */
 .plan-card:hover {
   transform: translateY(-10px) scale(1.03);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
   background: linear-gradient(145deg, #242424, #1b1b1b);
 }
 
-/* Icono en la card */
+/* Borde sutil con degradado diagonal usando pseudo-elemento */
+.plan-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  border-radius: 2rem;
+  padding: 1px; /* grosor del borde */
+  background: linear-gradient(135deg, #000000cd, #34125ad0); /* turquesa a violeta */
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude; 
+  pointer-events: none; /* no interfiere con hover o clicks */
+  z-index: 1;
+}
+
+/* Contenido de la card encima del borde */
+/* .plan-card > * {
+  position: relative;
+  z-index: 2;
+} */
+
+
+/* Icono */
 .plan-card .plan-icon {
   width: 3vmax;
   height: 3vmax;
   margin-bottom: 1.5rem;
-  filter: brightness(1.2); /* hace que los iconos resalten un poco */
+  filter: brightness(1.2);
   transition: transform 0.3s ease;
 }
 
@@ -63,24 +92,47 @@
   transform: scale(1.1);
 }
 
-/* Título de la card */
+/* Título */
 .plan-card h3 {
   font-size: 1.8vmax;
   margin-bottom: 1rem;
   font-family: 'Clash Grotesk', sans-serif;
   font-weight: 400;
-  color:var(--white);
+  color: var(--white);
 }
 
-/* Texto descriptivo */
-.plan-card p {
+/* Descripción */
+.plan-card .plan-descripcion {
   font-size: 1rem;
   line-height: 1.6;
-  margin-bottom: 2rem;
+  margin-bottom: 1.2rem;
   color: rgba(255, 255, 255, 0.8);
 }
 
-/* Separador debajo del texto */
+/* Lista de detalles */
+.plan-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.plan-lista li {
+  margin-bottom: 0.5rem;
+  padding-left: 1.2rem;
+  position: relative;
+  font-size: 0.95rem;
+}
+
+.plan-lista li::before {
+  content: "•";
+  color: #c73694;
+  position: absolute;
+  left: 0;
+}
+
+/* Separador y precio */
 .plan-card hr {
   width: 60%;
   margin: 1.5rem auto;
@@ -88,9 +140,8 @@
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* Precio destacado */
 .plan-card .precio {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: #c73694;
   transition: color 0.3s ease;
@@ -98,19 +149,6 @@
 
 .plan-card:hover .precio {
   color: #ff7bc3;
-}
-
-/* CTA debajo de las cards */
-.cta-servicios {
-  text-align: center;
-  margin: 5vmax auto 2vmax auto;
-  width: 40%;
-}
-
-.cta-servicios h3 {
-  font-size: 2vmax;
-  margin-top: 2vmax;
-  color: #fff;
 }
 
 /* Mobile */
@@ -135,5 +173,9 @@
   .plan-card .plan-icon {
     width: 60px;
     height: 60px;
+  }
+
+  .plan-lista li {
+    font-size: 1rem;
   }
 }
