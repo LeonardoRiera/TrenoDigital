@@ -29,6 +29,8 @@
   gap: 4vmax;
   justify-content: center;
   flex-wrap: wrap;
+  /* border: solid 2px yellow; */
+  
 }
 
 /* Card individual */
@@ -129,16 +131,35 @@
   color: #ff7bc3;
 }
 
+
+
 /* responsive */
 
 
 @media (max-width: 1091px) {
 
-  
+.planes-container {
+  align-content: center;
+}
 .planes-titulo {
   font-size: 4vmax;
   padding: 1vmax 4vmax;
 }
+
+.plan-card h3 {
+  font-size: 3vmax;
+  margin-bottom: 2vmax;
+  font-weight: 500;
+  padding-top: 2vmax;
+}
+
+/* Icono */
+.plan-card .plan-icon {
+  width: 6vmax;
+  height: 6vmax;
+ 
+}
+
 
 }
 
@@ -160,6 +181,13 @@
     max-width: 90%;
     padding: 2.5rem 1.5rem;
   }
+
+  
+.plan-card h3 {
+  font-size: 3.6vmax;
+  /* margin-bottom: 2vmax; */
+
+}
 
   .plan-card .plan-icon {
     width: 60px;
