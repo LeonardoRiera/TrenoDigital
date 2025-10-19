@@ -4,15 +4,15 @@ import "./Portfolio.css";
 
 // 🔹 Importá tus 5 imágenes para cada medida
 import desktop1 from "../../assets/portfolio/1.png";
-import desktop2 from "../../assets/portfolio/1.png";
+import desktop2 from "../../assets/portfolio/2.png";
 import desktop3 from "../../assets/portfolio/1.png";
-import desktop4 from "../../assets/portfolio/1.png";
+import desktop4 from "../../assets/portfolio/2.png";
 import desktop5 from "../../assets/portfolio/1.png";
 
 import mobile1 from "../../assets/portfolio/mobile1.png";
-import mobile2 from "../../assets/portfolio/mobile1.png";
+import mobile2 from "../../assets/portfolio/mobile2.png";
 import mobile3 from "../../assets/portfolio/mobile1.png";
-import mobile4 from "../../assets/portfolio/mobile1.png";
+import mobile4 from "../../assets/portfolio/mobile2.png";
 import mobile5 from "../../assets/portfolio/mobile1.png";
 
 // 🔹 Flechas personalizadas (sin tooltips)
@@ -54,7 +54,7 @@ function Portfolio() {
   };
 
   return (
-    <section className="portfolio-slider">
+    <section className="portfolio-slider" id="portfolio">
       <div className="portfolio-titulo">
         <h2>Trabajos Treno</h2>
       </div>
