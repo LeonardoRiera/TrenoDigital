@@ -1,26 +1,44 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
-import './Portfolio.css'
+import "./Portfolio.css";
 
-import proyecto1 from "../../assets/portfolio/1.png";
-import proyecto2 from "../../assets/portfolio/2.png";
-import proyecto3 from "../../assets/portfolio/3.png";
-import proyecto4 from "../../assets/portfolio/4.png";
-import proyecto5 from "../../assets/portfolio/5.png";
+// 🔹 Importá tus 5 imágenes para cada medida
+import desktop1 from "../../assets/portfolio/1.png";
+import desktop2 from "../../assets/portfolio/1.png";
+import desktop3 from "../../assets/portfolio/1.png";
+import desktop4 from "../../assets/portfolio/1.png";
+import desktop5 from "../../assets/portfolio/1.png";
 
-// Flechas personalizadas vacías para eliminar tooltips
-const PrevArrow = (props) => {
-  const { onClick } = props;
-  return <button className="slick-prev" onClick={onClick} />;
-};
+import mobile1 from "../../assets/portfolio/mobile1.png";
+import mobile2 from "../../assets/portfolio/mobile1.png";
+import mobile3 from "../../assets/portfolio/mobile1.png";
+import mobile4 from "../../assets/portfolio/mobile1.png";
+import mobile5 from "../../assets/portfolio/mobile1.png";
 
-const NextArrow = (props) => {
-  const { onClick } = props;
-  return <button className="slick-next" onClick={onClick} />;
-};
+// 🔹 Flechas personalizadas (sin tooltips)
+const PrevArrow = ({ onClick }) => <button className="slick-prev" onClick={onClick} />;
+const NextArrow = ({ onClick }) => <button className="slick-next" onClick={onClick} />;
 
 function Portfolio() {
-  const portfolioImages = [proyecto1, proyecto2, proyecto3, proyecto4, proyecto5];
+  const [portfolioImages, setPortfolioImages] = useState([]);
+
+  const desktopImgs = [desktop1, desktop2, desktop3, desktop4, desktop5];
+  const mobileImgs = [mobile1, mobile2, mobile3, mobile4, mobile5];
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 768) {
+        setPortfolioImages(mobileImgs); // 📱 Móvil
+      } else {
+        setPortfolioImages(desktopImgs); // 💻 Escritorio
+      }
+    };
+
+    handleResize(); // ✅ Ejecuta al montar el componente
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const settings = {
     dots: true,
@@ -31,23 +49,19 @@ function Portfolio() {
     arrows: true,
     autoplay: true,
     autoplaySpeed: 4000,
-    adaptiveHeight: true,
-    lazyLoad: "ondemand",
-    swipe: true,
     prevArrow: <PrevArrow />,
     nextArrow: <NextArrow />,
   };
 
   return (
-    
-    <section className="portfolio-slider" id="portfolio">
-        <div className="portfolio-titulo">
-            <h2>Nuestros Trabajos</h2>
-        </div>
+    <section className="portfolio-slider">
+      <div className="portfolio-titulo">
+        <h2>Trabajos Treno</h2>
+      </div>
       <Slider {...settings}>
         {portfolioImages.map((img, index) => (
           <div key={index}>
-            <img src={img} alt={`Proyecto ${index + 1}`} className="slider-img"/>
+            <img src={img} alt={`Proyecto ${index + 1}`} className="slider-img" />
           </div>
         ))}
       </Slider>
