@@ -204,14 +204,14 @@
     font-size: 3vmax;
     padding: 1vmax 2vmax;
     margin-bottom: 16vmax;
-    border: solid 3px yellow;
+    /* border: solid 3px yellow; */
   }
 
   .planes-subtitulo {
       font-size: 2.4vmax;
     padding: 2vmax 4vmax;
     margin-bottom: 4vmax;
-    border: solid 3px yellow;
+    /* border: solid 3px yellow; */
   }
   .plan-card {
     max-width: 90%;
