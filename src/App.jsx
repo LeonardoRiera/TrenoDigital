@@ -11,9 +11,13 @@ import Portfolio from './components/Portfolio/Portfolio'
 import Planes from './components/Planes/Planes'
 import Footer from './components/Footer/Footer'
 
+import WhatsAppButton from "./components/WhatsAppButton/WhatsAppButton";
+
+
 function App() {
   return (
     <>
+      <WhatsAppButton />
       <Navbar />
       <Header />
       <Nosotros />
