@@ -28,7 +28,7 @@ const planesData = [
       "Portfolio Artístico — para artistas, fotógrafos y creativos.",
       "Sitio Completo / SPA — dinámico y personalizado para marcas consolidadas.",
     ],
-    precio: "$30.000",
+    precio: "$150.000",
   },
   {
     titulo: "Branding para Emprendedores",
@@ -38,7 +38,7 @@ const planesData = [
       "Plan Emprendedor — logotipo, paleta de color y tipografía base.",
       "Plan Completo — sistema visual integral con guía de marca y aplicaciones gráficas.",
     ],
-    precio: "$30.000",
+    precio: "$60.000",
   },
   
 ];
@@ -50,6 +50,10 @@ const Planes = () => {
         <h2 className="planes-titulo">
           Cuando tu presencia online refleja tu esencia, los resultados se ven en el mundo real.
         </h2>
+        <h3 className="planes-subtitulo">
+          Conocé las Ofertas que tenemos para vos.
+        </h3>
+
       </div>
 
       <div className="planes-container">
@@ -73,6 +77,16 @@ const Planes = () => {
             <p className="precio">Planes desde: {plan.precio}</p>
           </div>
         ))}
+      </div>
+      <div className="row-pre-footer">
+
+        <div className="pre-footer-contenedor">
+          <h3>Diseño.</h3>
+          <h3>Creatividad.</h3>
+          <h3>Innovación.</h3>
+        </div>
+        
+
       </div>
     </section>
   );

@@ -56,7 +56,7 @@ function Portfolio() {
   return (
     <section className="portfolio-slider" id="portfolio">
       <div className="portfolio-titulo">
-        <h2>Trabajos Treno</h2>
+        <h2>Nuestros Trabajos</h2>
       </div>
       <Slider {...settings}>
         {portfolioImages.map((img, index) => (

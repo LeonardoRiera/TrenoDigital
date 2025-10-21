@@ -23,6 +23,15 @@
   -webkit-text-fill-color: transparent;
 }
 
+.planes-subtitulo {
+  font-size: 1.8vmax;
+  font-weight: 500;
+  width: 80%;
+  text-align: center;
+  /* border: solid 2px pink; */
+  margin: 10vmax auto 6vmax auto;
+}
+
 /* Contenedor de cards */
 .planes-container {
   display: flex;
@@ -30,6 +39,7 @@
   justify-content: center;
   flex-wrap: wrap;
   /* border: solid 2px yellow; */
+  padding-bottom: 6vmax;
   
 }
 
@@ -133,6 +143,18 @@
 
 
 
+.pre-footer-contenedor {
+  /* border: solid 3px yellow; */
+  padding: 8vmax 6vmax 0 6vmax;
+
+}
+
+
+.pre-footer-contenedor h3 {
+  font-size: 2.4vmax;
+  font-weight: 500;
+}
+
 /* responsive */
 
 
@@ -144,6 +166,13 @@
 .planes-titulo {
   font-size: 4vmax;
   padding: 1vmax 4vmax;
+  
+}
+
+.planes-subtitulo {
+  font-size: 4vmax;
+  padding: 1vmax 6vmax;
+  
 }
 
 .plan-card h3 {
@@ -174,9 +203,16 @@
   .planes-titulo {
     font-size: 3vmax;
     padding: 1vmax 2vmax;
-    margin-bottom: 4vmax;
+    margin-bottom: 16vmax;
+    border: solid 3px yellow;
   }
 
+  .planes-subtitulo {
+      font-size: 2.4vmax;
+    padding: 2vmax 4vmax;
+    margin-bottom: 4vmax;
+    border: solid 3px yellow;
+  }
   .plan-card {
     max-width: 90%;
     padding: 2.5rem 1.5rem;

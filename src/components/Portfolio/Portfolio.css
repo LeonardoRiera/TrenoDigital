@@ -55,6 +55,10 @@
 
 /* Mobile */
 @media (max-width: 768px) {
+  .portfolio-titulo h2 {
+    font-size: 4vmax;
+  }
+  
   .portfolio-slider {
     width: 100%; /* ocupa todo el ancho */
   }
