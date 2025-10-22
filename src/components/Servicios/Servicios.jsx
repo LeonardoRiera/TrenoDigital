@@ -6,11 +6,12 @@ import icono1 from '../../assets/icons/siembra-manual.png';
 import icono2 from '../../assets/icons/navegador-de-experiencia.png';
 import icono3 from '../../assets/icons/almuerzo-cohete.png';
 import icono4 from '../../assets/icons/megafono-mundial.png';
-
+import Faja from "../Faja/Faja";
 
 function Servicios() {
   return (
     <section className="servicios" id="servicios">
+      <Faja />
       {/* Título principal */}
       <img src={icono1} alt="mano que sostiene un brote" className='icono-brote'/>
       <h2 className="servicios-title">Lo que hacemos</h2>
@@ -48,7 +49,7 @@ function Servicios() {
           </p>
         </div>
       </div>
-
+      {/* <Faja /> */}
         
     </section>
 

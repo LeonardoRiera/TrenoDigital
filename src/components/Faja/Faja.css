@@ -1,0 +1,62 @@
+.faja-portfolio {
+  overflow: hidden;
+  width: 100%;
+  transform: rotate(-2deg);
+  background: #000; /* puedes cambiar o quitar si ya tienes un fondo definido */
+}
+
+.faja-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  padding-top: 4vmax;
+  color: #fff;
+}
+
+.marquee {
+  display: flex;
+  align-items: center;
+}
+
+.marquee-item {
+  font-size: 10vw;
+  /* font-family: 'Melodrama', serif; */
+  background: linear-gradient(90deg, #940496, #fbcef4, #940496);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: colorMove 4s linear infinite;
+  white-space: nowrap;
+}
+
+.dot {
+  margin: 0 3vmax;
+  font-size: 8vw;
+  color: #fce1fb;
+}
+
+/* Animación del gradiente del texto */
+@keyframes colorMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .marquee-item {
+    font-size: 16vw;
+  }
+
+  .dot {
+    font-size: 12vw;
+  }
+
+  .faja-container {
+    padding: 4vmax 0;
+  }
+}
