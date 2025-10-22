@@ -34,7 +34,7 @@ const Nosotros = () => {
           <Button
             texto={<> Hablemos de tu Proyecto</>}
             tipo="secundario"
-            onClick={() => window.open('https://wa.me/tu-numero', '_blank')}
+            onClick={() => window.open('https://wa.me/5492964455088', '_blank')}
             className="about-button"
           />
          

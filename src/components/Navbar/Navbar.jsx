@@ -122,7 +122,7 @@ function Navbar() {
           <Button
             texto={<> WhatsApp</>}
             tipo="primario"
-            onClick={() => window.open('https://wa.me/tu-numero', '_blank')}
+            onClick={() => window.open('https://wa.me/5492964455088', '_blank')}
           />
         </div>
       </div>
@@ -130,4 +130,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Navbar; 
