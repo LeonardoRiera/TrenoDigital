@@ -122,7 +122,7 @@ function Navbar() {
           <Button
             texto={<> WhatsApp</>}
             tipo="primario"
-            onClick={() => window.open('https://wa.me/5492964455088', '_blank')}
+            onClick={() => window.open('https://wa.me/5492964455088?text=Hola,%20quiero%20más%20información%20por%20favor.', '_blank')}
           />
         </div>
       </div>

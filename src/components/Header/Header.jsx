@@ -4,7 +4,7 @@ import './Header.css';
 
 function Header() {
   return (
-    <header className="header-container">
+    <header className="header-container" id='inicio'>
       <div className='header-cont'>
         {/* Primer row */}
         <div className="header-top row">

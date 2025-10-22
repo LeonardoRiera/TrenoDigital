@@ -33,13 +33,13 @@ const Footer = () => {
         <div className="footer-col">
           <h4>Conectemos</h4>
           <div className="footer-socials">
-            <a href="https://www.instagram.com/vinaluzph/" target="_blank" rel="noreferrer">
+            <a href="https://www.instagram.com/treno.digital.ok/" target="_blank" rel="noreferrer">
               <FaInstagram />
             </a>
-            <a href="https://wa.me/549XXXXXXXXXX" target="_blank" rel="noreferrer">
+            <a href="https://wa.me/5492964455088?text=Hola,%20quiero%20más%20información%20por%20favor." target="_blank" rel="noreferrer">
               <FaWhatsapp />
             </a>
-            <a href="mailto:trenodigital@gmail.com">
+            <a href="mailto:trenodigital.agencia@gmail.com">
               <FaEnvelope />
             </a>
           </div>

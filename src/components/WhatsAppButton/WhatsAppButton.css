@@ -4,7 +4,9 @@
   position: fixed;
   bottom: 30px;
   right: 20px;
-  background-color:#541888ec;
+  /* background-color: linear-gradient(90deg,  #ffd5e5cc 10%, #b61ae5c1); */
+  background-color: #a94fbfe6;
+  /* border: solid 2px yellow; */
   color: white;
   width: 70px;
   height: 70px;
@@ -20,6 +22,7 @@
 
 .whatsapp-float:hover {
   transform: scale(1.1);
-  background-color: #1ebc5d;
+  background-color:#db508ce8;
+  color: white;
 }
 
