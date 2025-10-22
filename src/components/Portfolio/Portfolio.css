@@ -4,7 +4,8 @@
     padding: 2vmax;
     font-size: 3vmax;
     font-weight: 600;
-    margin-bottom: 2vmax;
+    /* margin-bottom: 2vmax; */
+    letter-spacing: 0.05em;
 }
 
 .portfolio-slider {

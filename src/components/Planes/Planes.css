@@ -18,18 +18,25 @@
   max-width: 900px;
   margin: 0 auto 5vmax auto;
   line-height: 1.4;
-  background: linear-gradient(90deg, #d856ffc1 0%, #ffd5e5cc 47%, #ffd5e5cc 53%, #d856ffc1 100%);
+  background: linear-gradient(90deg, #d856ffc1 0%, #fcdde9cc 47%, #fcdde9cc 53%, #d856ffc1 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+.icono-corona {
+  margin: 6vmax auto 0 auto;
+  /* border: solid 2px yellow; */
+}
+
+
 .planes-subtitulo {
-  font-size: 1.8vmax;
+  font-size: 2vmax;
   font-weight: 500;
   width: 80%;
   text-align: center;
   /* border: solid 2px pink; */
-  margin: 10vmax auto 6vmax auto;
+  /* margin: 10vmax auto 2vmax auto; */
+  margin: 1vmax auto;
 }
 
 /* Contenedor de cards */

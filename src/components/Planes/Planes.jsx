@@ -2,6 +2,7 @@ import React from "react";
 import icono2 from "../../assets/icons/navegador-de-experiencia.png";
 import icono3 from "../../assets/icons/almuerzo-cohete.png";
 import icono4 from "../../assets/icons/megafono-mundial.png";
+import icono5 from "../../assets/icons/beneficio.png";
 import "./Planes.css";
 
 const planesData = [
@@ -50,6 +51,7 @@ const Planes = () => {
         <h2 className="planes-titulo">
           Cuando tu presencia online refleja tu esencia, los resultados se ven en el mundo real.
         </h2>
+        <img src={icono5} alt="mano que sostiene una corona" className='icono-corona'/>
         <h3 className="planes-subtitulo">
           Conocé las Ofertas que tenemos para vos.
         </h3>
