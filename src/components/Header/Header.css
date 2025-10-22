@@ -8,7 +8,7 @@
   justify-content: center;
   padding: 8vmax 0 3vmax 0;
 
-  background: linear-gradient(270deg, #05050500, #3003346f, #05050500);
+  background: linear-gradient(270deg, #05050500, #36043a8b, #05050500);
   background-size: 400% 400%;
   animation: gradientShift 10s ease infinite;
 }
@@ -69,6 +69,7 @@
   font-weight: 400;
   color: var(--white);
   text-align: center;
+  letter-spacing: 0.05em;
  
 }
 
