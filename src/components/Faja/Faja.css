@@ -3,6 +3,7 @@
   width: 100%;
   transform: rotate(-2deg);
   background: #000; /* puedes cambiar o quitar si ya tienes un fondo definido */
+  margin-top: 2vmax;
 }
 
 .faja-container {
