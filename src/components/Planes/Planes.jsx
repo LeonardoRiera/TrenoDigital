@@ -4,6 +4,7 @@ import icono3 from "../../assets/icons/almuerzo-cohete.png";
 import icono4 from "../../assets/icons/megafono-mundial.png";
 import icono5 from "../../assets/icons/beneficio.png";
 import "./Planes.css";
+import Faja from "../Faja/Faja";
 
 const planesData = [
   
@@ -82,11 +83,12 @@ const Planes = () => {
       </div>
       <div className="row-pre-footer">
 
-        <div className="pre-footer-contenedor">
+        {/* <div className="pre-footer-contenedor">
           <h3>Diseño.</h3>
           <h3>Creatividad.</h3>
           <h3>Innovación.</h3>
-        </div>
+        </div> */}
+        <Faja />
         
 
       </div>

@@ -11,7 +11,6 @@ import Faja from "../Faja/Faja";
 function Servicios() {
   return (
     <section className="servicios" id="servicios">
-      <Faja />
       {/* Título principal */}
       <img src={icono1} alt="mano que sostiene un brote" className='icono-brote'/>
       <h2 className="servicios-title">Lo que hacemos</h2>
@@ -49,7 +48,7 @@ function Servicios() {
           </p>
         </div>
       </div>
-      {/* <Faja /> */}
+      
         
     </section>
 

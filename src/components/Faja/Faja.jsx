@@ -13,14 +13,14 @@ const Faja = () => {
           direction="left"
           speed={70}
           gradient={false}
-          pauseOnHover
+          /* pauseOnHover */
           className="marquee"
         >
-          <span className="marquee-item">{t("Impulsá tu Proyecto")}</span>
+          <span className="marquee-item">{t("Creatividad")}</span>
           <span className="dot">•</span>
-          <span className="marquee-item">{t("Diseño Web")}</span>
+          <span className="marquee-item">{t("Innovación")}</span>
           <span className="dot">•</span>
-          <span className="marquee-item">{t("Creatividad sin límites")}</span>
+          <span className="marquee-item">{t("Diseño")}</span>
           <span className="dot">•</span>
         </Marquee>
       </div>
