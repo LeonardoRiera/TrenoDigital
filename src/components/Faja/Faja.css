@@ -2,8 +2,8 @@
   overflow: hidden;
   width: 100%;
   transform: rotate(0deg);
-  background: #000; /* puedes cambiar o quitar si ya tienes un fondo definido */
-  /* margin-top: 2vmax; */
+  background: #000; 
+  
 }
 
 .faja-container {
@@ -22,7 +22,6 @@
 
 .marquee-item {
   font-size: 10vw;
-  /* font-family: 'Melodrama', serif; */
   background: linear-gradient(90deg, #940496, #fbcef4, #940496);
   background-size: 200% auto;
   -webkit-background-clip: text;
